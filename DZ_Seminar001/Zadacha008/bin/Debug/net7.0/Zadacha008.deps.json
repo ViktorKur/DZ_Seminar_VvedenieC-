@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Zadacha008/1.0.0": {
+        "runtime": {
+          "Zadacha008.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Zadacha008/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

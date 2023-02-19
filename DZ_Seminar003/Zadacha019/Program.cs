@@ -3,10 +3,11 @@
 // 14212 -> нет
 // 12821 -> да
 // 23432 -> да
+Console.Clear();
 int VhodZn(string text)
 {
   System.Console.WriteLine(text);
-  return Convert.ToInt32(Console.ReadLine());
+  return Math.Abs(Convert.ToInt32(Console.ReadLine()));
 }
 
 int Count(int num)
@@ -34,8 +35,7 @@ int Zn = VhodZn("Введите пятизначное значение");
 int i = Count(Zn);
 if (i == 5)
 {
-  System.Console.WriteLine($"{Zn}, {i}");
-  System.Console.WriteLine($"Введенное вами число {Zn} - {Palidrom(Zn)}");
+    System.Console.WriteLine($"Введенное вами число - {Palidrom(Zn)}");
 }
 else
 {

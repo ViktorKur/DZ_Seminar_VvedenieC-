@@ -23,7 +23,8 @@ for (int i=0;i<arr.Length;i++)
 }
 return sum;
 }
-
+ 
+ 
 void Main(string tx)
 {
 System.Console.Write(tx);

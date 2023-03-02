@@ -19,9 +19,17 @@ void RaschetTochkiXandY()
   valKB[3] = VvodDan($"Введите значение b (2) = ");
   valKB[2] = VvodDan($"Введите значение k (2) = ");
 
-  koordinatyPeresechen[0] = Math.Round(((valKB[3]) - valKB[1]) / (valKB[0] - valKB[2]),1);
-  koordinatyPeresechen[1] = Math.Round(valKB[2] * koordinatyPeresechen[0] + valKB[3],1);
-  System.Console.WriteLine($"Координаты точки пересечения двух прямых = [" + string.Join(";", koordinatyPeresechen) + $"]");
+  if (valKB[0] != valKB[2])
+  {
+    if (valKB[1] != valKB[3])
+    {
+      koordinatyPeresechen[0] = Math.Round(((valKB[3]) - valKB[1]) / (valKB[0] - valKB[2]), 1);
+      koordinatyPeresechen[1] = Math.Round(valKB[2] * koordinatyPeresechen[0] + valKB[3], 1);
+      System.Console.WriteLine($"Координаты точки пересечения двух прямых = [" + string.Join(";", koordinatyPeresechen) + $"]");
+    }
+    else System.Console.WriteLine("Прямые совпадают");
+  }
+  else System.Console.WriteLine("Прямые паралельны");
 }
 
 RaschetTochkiXandY();

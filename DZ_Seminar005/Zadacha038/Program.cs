@@ -11,7 +11,7 @@ int[] VvodDan(string text)
 
 void PrintResult(double[] parA, double razN)
 {
-  System.Console.WriteLine($"Сгенерированный массив случайных вещественных чисел: [" + string.Join(",", parA) + $"] и между Макс и Мин числами массива => {razN}");
+  System.Console.WriteLine($"Сгенерированный массив случайных вещественных чисел: [" + string.Join("; ", parA) + $"] и между Макс и Мин числами массива => {razN}");
 }
 
 
@@ -21,7 +21,7 @@ double[] RNDMAS(int[] parAr)
   Random rnd = new Random();
   for (int i = 0; i < rndMassiv.Length; i++)
   {
-    rndMassiv[i] = rnd.Next(parAr[1], parAr[2] + 1) + Convert.ToDouble(rnd.Next(10)/10);
+    rndMassiv[i] = rnd.Next(parAr[1], parAr[2] + 1) + Convert.ToDouble(rnd.Next(10)/10.0);
     // System.Console.WriteLine(rndMassiv[i]);
   }
   return rndMassiv;
@@ -57,5 +57,5 @@ void Main(int[] par)
 
 Console.Clear();
 int[] parArr = new int[3];
-parArr = VvodDan("Введите через запятую параметры массива и генератора случейных чисел (число ячеек, мин. зн., макс зн.)");
+parArr = VvodDan("Введите через запятую параметры одномерного массива и генератора случейных чисел (число ячеек, мин. зн., макс зн.)");
 Main(parArr);

@@ -92,15 +92,16 @@ void PeremnojenieMatrix(double[,] matrix1, double[,] matrix2)
   else System.Console.WriteLine("Умножение не возможно! Количество строк первой матрицы не равно количеству столбцов второй матрицы.");
 }
 
-
 void Main()
 {
   Console.Clear();
   System.Console.WriteLine("Заполнение параметров первой матрицы");
+  System.Console.WriteLine("Количество строк первой матрицы должно быть равно количеству столбцов второй матрицы.");
   double[,] matr = UslovZapolnMatrix();
   double[,] matr1 = new double[matr.GetLength(0), matr.GetLength(1)];
   matr1 = matr;
   System.Console.WriteLine("Заполнение параметров второй матрицы");
+  System.Console.WriteLine("Количество строк первой матрицы должно быть равно количеству столбцов второй матрицы.");
   double[,] matr0 = UslovZapolnMatrix();
   double[,] matr2 = new double[matr0.GetLength(0), matr0.GetLength(1)];
   matr2 = matr0;

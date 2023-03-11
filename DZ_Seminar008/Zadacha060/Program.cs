@@ -44,7 +44,7 @@ void PrintMatrix(double[,,] prnMatrix)
     }
     System.Console.WriteLine();
   }
-  }
+}
 
 void Main()
 {
@@ -56,6 +56,7 @@ void Main()
     System.Console.WriteLine();
     double[,,] matr = new double[m, n, k];
     matr = ZapolnenMatrix(m, n, k);
+    System.Console.WriteLine("Сгенерированный трёхмерный массив двузначных чисел с индексами положения в массиве:");
     PrintMatrix(matr);
     System.Console.WriteLine();
   }

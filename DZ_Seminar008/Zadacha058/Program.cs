@@ -41,7 +41,6 @@ void PrintMatrix(double[,] prnMatrix)
   }
 }
 
-
 double[,] UslovZapolnMatrix()
 {
   try
